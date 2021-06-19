@@ -1,8 +1,18 @@
 <template>
   <div>
+    <transition name="menu">
+      <div id="menu" v-if="showMenu">
+        <ul>
+          <li>PROFILE</li>
+          <li>MEMBERS</li>
+          <li>ALBUMS</li>
+          <li>VIDEO</li>
+        </ul>
+      </div>
+    </transition>
     <header class="d-flex justify-content-between align-items-center">
       <div><a href="/">OH MY GIRL</a></div>
-      <i class="fas fa-bars"></i>
+      <i @click="showMenus" class="fas fa-bars"></i>
     </header>
     <div id="icons" class="d-flex">
       <a target="blank" href="http://ohmy-girl.com/omg_official/"><i class="fas fa-home"></i></a>
@@ -26,7 +36,30 @@ export default {
   name: 'Home',
   components: {
     
-  }
+  },
+  data: function () {
+    return {
+      showMenu: false,
+    }
+  },
+  methods: {
+    showMenus: function () {
+      this.showMenu = !this.showMenu
+      const omg = document.querySelector('header a')
+      const i = document.querySelector('header i')
+      const icons = document.querySelectorAll('#icons a')
+      console.log(omg, i.style.color)
+      if (omg.style.color === 'black') {
+        omg.style.color = 'white'
+        i.style.color = 'white'
+        icons.forEach(icon => icon.style.color = 'white')
+      } else {
+        omg.style.color = 'black'
+        i.style.color = 'black'
+        icons.forEach(icon => icon.style.color = 'black')
+      }
+    }
+  },
 }
 </script>
 
@@ -69,8 +102,8 @@ export default {
     height: 120px;
     top: 0;
     left: 0;
-    color: white;
-    z-index: 2;
+    color: rgb(255, 255, 255);
+    z-index: 3;
     font-size: 2.5rem;
     font-weight: 1000;
     padding: 2rem 5rem 0 5rem;
@@ -79,27 +112,37 @@ export default {
   }
 
   header > div > a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: color 1s 0.3s;
+  }
+
+  header > i {
+    cursor: pointer;
+    transition: color 1s 0.3s;
   }
 
   #icons {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: 5rem;
     bottom: 3rem;
     font-size: 2rem;
-    color: white;
+    transition: transform .2s;
   }
 
   #icons > a {
-    color: white;
+    color: rgb(255, 255, 255);
     padding-right: 2rem;
-    transition: transform 0.2s;
+    transition: color 1s 0.3s;
   }
 
-  #icons > a:hover {
-    transform: translate(0, -20%);
+  #icons i {
+    transition: transform .2s;
+  }
+
+  #icons i:hover{
+    transform: translate(0, -30%);
   }
 
   #album-info {
@@ -147,5 +190,42 @@ export default {
     font-weight: lighter;
     color: rgb(238, 226, 159);
     text-shadow: 7px 7px 5px rgb(0,0,0, 0.7);
+  }
+
+  #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  #menu > ul {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    color: black;
+    transform: translate(-50%);
+    list-style: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: start;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .menu-enter-active {
+    animation: showMenu .5s;
+  }
+
+  .menu-leave-active {
+    animation: showMenu .5s reverse;
+  }
+
+  @keyframes showMenu {
+    0% { height: 0%; }
+    100% { height: 100vh; }
   }
 </style>

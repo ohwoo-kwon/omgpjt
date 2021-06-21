@@ -1,27 +1,27 @@
 <template>
   <div>
-    <transition name="menu">
+    <!-- <transition name="menu">
       <div id="menu" v-if="showMenu">
         <ul>
-          <li>PROFILE</li>
-          <li>MEMBERS</li>
-          <li>ALBUMS</li>
+          <li><router-link :to="{name: 'OMG' }">PROFILE</router-link></li>
+          <li><router-link :to="{name: 'Members' }">MEMBERS</router-link></li>
+          <li><router-link :to="{name: 'Albums' }">ALBUMS</router-link></li>
           <li>VIDEO</li>
         </ul>
       </div>
-    </transition>
-    <header class="d-flex justify-content-between align-items-center">
+    </transition> -->
+    <!-- <header class="d-flex justify-content-between align-items-center">
       <div><a href="/">OH MY GIRL</a></div>
       <i @click="showMenus" class="fas fa-bars"></i>
-    </header>
-    <div id="icons" class="d-flex">
+    </header> -->
+    <!-- <div id="icons" class="d-flex">
       <a target="blank" href="http://ohmy-girl.com/omg_official/"><i class="fas fa-home"></i></a>
       <a target="blank" href="https://cafe.daum.net/-ohmygirl"><i class="fab fa-dochub"></i></a>
       <a target="blank" href="https://www.instagram.com/wm_ohmygirl/"><i class="fab fa-instagram"></i></a>
       <a target="blank" href="https://twitter.com/WM_OHMYGIRL"><i class="fab fa-twitter"></i></a>
       <a target="blank" href="https://www.youtube.com/channel/UC-qYkzKFdekoEniRu_FS3zg"><i class="fab fa-youtube"></i></a>
       <a target="blank" href="https://www.vlive.tv/channel/F51143"><i class="far fa-hand-peace"></i></a>
-    </div>
+    </div> -->
     <div id="album-info">
       <p id="album-name">Dear OHMYGIRL</p>
       <a target="blank" href="https://www.youtube.com/watch?v=HzOjwL7IP_o"><i class="fab fa-youtube"></i></a><span> Dun Dun Dance</span>
@@ -39,26 +39,10 @@ export default {
   },
   data: function () {
     return {
-      showMenu: false,
     }
   },
-  methods: {
-    showMenus: function () {
-      this.showMenu = !this.showMenu
-      const omg = document.querySelector('header a')
-      const i = document.querySelector('header i')
-      const icons = document.querySelectorAll('#icons a')
-      console.log(omg, i.style.color)
-      if (omg.style.color === 'black') {
-        omg.style.color = 'white'
-        i.style.color = 'white'
-        icons.forEach(icon => icon.style.color = 'white')
-      } else {
-        omg.style.color = 'black'
-        i.style.color = 'black'
-        icons.forEach(icon => icon.style.color = 'black')
-      }
-    }
+  created: function () {
+    this.$emit('sHome')
   },
 }
 </script>
@@ -96,7 +80,7 @@ export default {
     z-index: 1;
   }
 
-  header {
+  /* header {
     position: fixed;
     width: 100%;
     height: 120px;
@@ -120,9 +104,9 @@ export default {
   header > i {
     cursor: pointer;
     transition: color 1s 0.3s;
-  }
+  } */
 
-  #icons {
+  /* #icons {
     z-index: 3;
     position: absolute;
     left: 5rem;
@@ -143,7 +127,7 @@ export default {
 
   #icons i:hover{
     transform: translate(0, -30%);
-  }
+  } */
 
   #album-info {
     z-index: 2;
@@ -192,7 +176,7 @@ export default {
     text-shadow: 7px 7px 5px rgb(0,0,0, 0.7);
   }
 
-  #menu {
+  /* #menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -227,5 +211,5 @@ export default {
   @keyframes showMenu {
     0% { height: 0%; }
     100% { height: 100vh; }
-  }
+  } */
 </style>

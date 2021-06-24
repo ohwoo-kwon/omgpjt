@@ -12,42 +12,42 @@
         <p>데뷔</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/260D1F37560C0A222D">
+        <img src="@/assets/OHMYGIRL_CLOSER.jpg">
         <p id="date">2015.10.08</p>
         <p>2nd 미니 : CLOSER</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/266B9D3456F00D2F19">
+        <img src="@/assets/PINK OCEAN 2nd Concept Teaser.jpg">
         <p id="date">2016.03.28</p>
         <p>3rd 미니 : PINK OCEAN</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/226CD24157431B5409">
+        <img src="@/assets/OHMYGIRL_WINDYDAY.jpg">
         <p id="date">2016.05.26</p>
         <p>리패키지 : WINDY DAY</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/226AEE375798CE4808">
+        <img src="@/assets/09_ohmygirl.jpg">
         <p id="date">2016.08.01</p>
         <p>스페셜 싱글 : 내 얘길 들어봐</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/23667D4A578F523E13">
+        <img src="@/assets/OHMYGIRL_CONCERT_POSTER.jpg">
         <p id="date">2016.08.20 ~ 21</p>
         <p>1st 콘서트 : 여름 동화</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/2714DD4058D3DE4515">
+        <img src="@/assets/ColoringBook.jpg">
         <p id="date">2017.04.03</p>
         <p>4th 미니 : Coloring Book</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/9938173B5A3FC13112">
+        <img src="@/assets/SecretGarden.gif">
         <p id="date">2018.01.09</p>
         <p>5th 미니 : 비밀정원</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://w.namu.la/s/ad6b05602a69f8ee5ca14cc638d117472c778b60bface928463efcc3224059ea3d94312c626fc0202f2aea74d7064d369a925af4ddf9b9e0f55d9ac830cdbea047e13f1293dd1f5210e08ffaa549d3328d032e48e6afb29c56ce53139b78fb133f8d0af870c67269110c10919f7b9ece">
+        <img src="@/assets/2nd CONCERT.jpg">
         <p id="date">2018.01.22 ~ 02.26</p>
         <p>2nd 콘서트 : 오마이걸의 비밀정원</p>
       </splide-slide>
@@ -57,12 +57,12 @@
         <p>데뷔 첫 1위</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/99E712485AB667720C">
+        <img src="@/assets/OHMYGIRL_BANHANA.jpg">
         <p id="date">2018.04.02</p>
         <p>유닛 : 바나나 알러지 원숭이</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/99FD16495B86B50F19">
+        <img src="@/assets/REMEMBER_ME.jpg">
         <p id="date">2018.09.10</p>
         <p>6th 미니 : Remember Me</p>
       </splide-slide>
@@ -72,17 +72,17 @@
         <p>3rd 콘서트 : 가을 동화</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/993650465CC70C810F">
+        <img src="@/assets/SSFWL.jpg">
         <p id="date">2019.05.08</p>
         <p>1st 정규 : The Fifth Season</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/99A4253D5D3F08F01B">
+        <img src="@/assets/Fall_in_Love.jpg">
         <p id="date">2019.08.05</p>
         <p>리패키지 : Fall in Love</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cafeattach/1VTSi/f656a35971d110e08455b9d1da70dded8874bb86">
+        <img src="@/assets/BUNGEE.jpg">
         <p id="date">2019.08.18</p>
         <p>지상파 첫 1위</p>
       </splide-slide>
@@ -92,12 +92,12 @@
         <p>퀸덤 출연</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cfile/cafe/995E223B5E971A4E21">
+        <img src="@/assets/NONSTOP.jpg">
         <p id="date">2020.04.27</p>
         <p>7th 미니 : NONOSTOP</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cafeattach/1VTSi/0901992f11732d40d4b78e95b6dc9af56857dbe8">
+        <img src="@/assets/OMG_8th.jpg">
         <p id="date">2020.05.15</p>
         <p>'살짝 설렜어' 8관왕 달성</p>
       </splide-slide>
@@ -107,7 +107,7 @@
         <p>4th 콘서트 : 겨울 동화</p>
       </splide-slide>
       <splide-slide>
-        <img src="https://t1.daumcdn.net/cafeattach/1VTSi/e02049f719f12a4e692798358e2400c762d9163d">
+        <img src="@/assets/Concept.jpg">
         <p id="date">2021.05.10</p>
         <p>8th 미니 : Dear OHMYGIRL</p>
       </splide-slide>
